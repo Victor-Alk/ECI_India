@@ -15,8 +15,9 @@ Follow these rules precisely:
 4.  The constituency information (No, Name, etc.) and the Turnout data will be the same for all candidates in that constituency and must be repeated on each row.
 5.  Combine multi-line candidate names into a single field (e.g., "DR. HEENA VIJAYKUMAR GAVIT").
 6.  Treat "NOTA" as a candidate. If data for a field (like Gender or Age) is missing, leave it blank.
-7.  Handle messy or misaligned rows by correctly matching the data to the right column based on the table's overall structure.
-8.  Do not add any commentary or explanations. Only output the raw CSV data, starting with the header row.
+7.  If Candidate_Name = NOTA, keep the "Symbol" column empty.
+8.  Handle messy or misaligned rows by correctly matching the data to the right column based on the table's overall structure.
+9.  Do not add any commentary or explanations. Only output the raw CSV data, starting with the header row.
 
 CSV files : 
 Delhi 2025 - 10-Detailed_Results_1744913508.pdf
